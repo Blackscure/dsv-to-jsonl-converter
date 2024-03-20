@@ -26,7 +26,14 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.13.0</version>
         </dependency>
-        <!-- Add any other dependencies you need -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version> <!-- Or a version compatible with your project -->
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
