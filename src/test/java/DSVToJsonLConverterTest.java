@@ -1,13 +1,17 @@
 import static org.junit.Assert.assertEquals;
+
+import org.example.DSVToJsonLConverter;
 import org.junit.Test;
+
+import java.io.IOException;
 import java.util.List;
 
 public class DSVToJsonLConverterTest {
 
     @Test
-    public void testConversionWithFile1() {
+    public void testConversionWithFile1() throws IOException {
         // Provide the path to the first test input file
-        String inputFilePath = "path/to/first/input/file.txt";
+        String inputFilePath = "input/DSVinput.txt";
 
         // Expected JSON-L output for the first file
         String expectedOutput = "expected JSON-L output for file 1";
@@ -21,7 +25,7 @@ public class DSVToJsonLConverterTest {
     }
 
     @Test
-    public void testConversionWithFile2() {
+    public void testConversionWithFile2() throws IOException {
         // Provide the path to the second test input file
         String inputFilePath = "path/to/second/input/file.txt";
 
@@ -37,7 +41,7 @@ public class DSVToJsonLConverterTest {
     }
 
     @Test
-    public void testConversionWithMockData() {
+    public void testConversionWithMockData() throws IOException {
         // Define mock data for testing
         String mockData = "mock DSV data here";
 
