@@ -1,0 +1,2 @@
+20220101,value1,value2
+20220102,value3,value4
